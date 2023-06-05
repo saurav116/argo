@@ -1,0 +1,19 @@
+apiVersion: v2
+dependencies:
+- name: helper-operator
+  repository: https://charts.stderr.at/
+  version: 1.0.14
+- condition: helper-status-checker.enabled
+  name: helper-status-checker
+  repository: https://charts.stderr.at/
+  version: ~2.0.1
+description: Deploy and configure OpenShift Logging including Elasticsearch and Kibana
+home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-logging
+icon: https://raw.githubusercontent.com/tjungbauer/helm-charts/gh-pages/images/logging.svg
+maintainers:
+- email: tjungbau@redhat.com
+  name: tjungbauer
+name: openshift-logging
+sources:
+- https://github.com/tjungbauer/helm-charts
+version: 1.0.17
